@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Bikyo</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f2f7f7;
+    }
+    .header {
+      background-color: #00BFBF;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    h1, h2 {
+      color: #034747;
+    }
+    .container {
+      padding: 30px;
+      max-width: 1100px;
+      margin: -20px auto 40px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      animation: fadeIn 1s ease-in-out;
+    }
+    .team-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .team-member {
+      background: #ffffffee;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .team-member:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    }
+    .role {
+      font-weight: bold;
+      color: #00BFBF;
+      margin-bottom: 8px;
+      font-size: 1.1em;
+    }
+    p {
+      color: #333;
+      line-height: 1.7;
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>About Bikyo</h1>
+    <p>India's Smart Bike Ride-Sharing Platform</p>
+  </div>
+
+  <div class="container">
+    <p>
+      Bikyo is India's first smart bike ride-sharing platform built to redefine urban commuting. With 0% commission for riders and seamless matching, we deliver a fast, economical, and eco-friendly transport solution.
+    </p>
+    <p>
+      We're passionate about transforming mobility in Indian cities through innovative technology—helping everyday riders earn more and passengers ride better.
+    </p>
+
+    <h2>Meet the Team</h2>
+    <div class="team-container">
+      <div class="team-member">
+        <div class="role">Frontend & Web Development</div>
+        <p>Designs and maintains the Bikyo mobile app and website, ensuring a smooth and responsive user experience across devices.</p>
+      </div>
+
+      <div class="team-member">
+        <div class="role">Social Media, HR & Graphic Design</div>
+        <p>Manages our social media voice, talent recruitment, and visual identity to build a recognizable and trusted brand.</p>
+      </div>
+
+      <div class="team-member">
+        <div class="role">Content Strategy & Customer Support</div>
+        <p>Develops marketing content and scripts while delivering support that fosters trust and loyalty within our user community.</p>
+      </div>
+
+      <div class="team-member">
+        <div class="role">Finance & Content Creation</div>
+        <p>Drives budgeting and monetization strategy while crafting impactful written content aligned with Bikyo’s mission.</p>
+      </div>
+    </div>
+
+    <h2>Our Vision</h2>
+    <p>
+      To lead India’s two-wheeler ride-sharing ecosystem by enabling smarter, safer, and more affordable journeys for every commuter.
+    </p>
+  </div>
+
+</body>
+</html>
